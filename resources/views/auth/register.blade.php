@@ -5,7 +5,7 @@
     <div class="col-4"></div>
     <div class="card p-4 mt-3 col-4">
         <h4>Register a new account</h4>
-        <form method="POST" action="#">
+        <form method="POST" action="{{ route('register') }}">
             @csrf
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Name</label>
@@ -21,7 +21,7 @@
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" name="password_confirm">
+                <input type="password" class="form-control" name="password_confirmation">
             </div>
             <button type="submit" class="btn btn-primary">REGISTER</button>
         </form>
